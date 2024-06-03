@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.box {
+  /* display: grid; */
+  width: 350px;
+  height: 350px;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  border: 8px solid red;
+  animation: animate 2.5s linear infinite;
+}
+
+.text1 {
+  justify-content: center;
+  margin-top: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  background: linear-gradient(
+    45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #b9936c,
+    #9c9c30,
+    #dc143c
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text2 {
+  text-align: center;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #b9936c,
+    #d5f4e6,
+    #dc143c
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
